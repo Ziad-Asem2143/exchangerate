@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/CSS/bootstrap.css" />
+    <link rel="stylesheet" href="/CSS/all.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exchanger</title>
+  </head>
+  <body
+    style="background: linear-gradient(to right, black, 80%, #959ca2)"
+    class="row justify-content-center m-0 vh-100"
+  >
+    <nav class="navbar justify-content-evenly bg-black gap-5 p-1 pe-5">
+      <img
+        src="https://exchanger-nine.vercel.app/images/nav-banner.png"
+        style="width: 150px"
+        class="rounded-4 p-2 s-sm-25"
+      />
+      <p class="fs-3 text-warning">Currency-Converter</p>
+    </nav>
+    <div
+      style="background: linear-gradient(170deg, black, teal)"
+      class="w-75 m-5 p-5 d-flex justify-content-center rounded-4 h-75"
+    >
+      <div
+        class="d-flex flex-column gap-3 align-items-center justify-content-center w-75 h-75"
+      >
+        <div class="row justify-content-end w-100 p-2">
+          <h4 class="text-secondary pb-0 mb-0">Amount</h4>
+          <div class="row justify-content-end m-0">
+            <input
+              type="text"
+              placeholder="1 By default"
+              class="border-top-0 border-start-0 border-end-0 border-3 border-primary bg-transparent p-2 text-primary"
+            />
+            <i
+              class="fa-solid fa-arrow-right-arrow-left arrow-logo position-absolute p-2 p-2 fs-4 me-3"
+              style="color: #0466e7"
+            ></i>
+          </div>
+        </div>
+        <div class="row justify-content-evenly w-100 gap-4 gap-ms-5 mb-2">
+          <div
+            class="w-100 d-flex bg-secondary rounded justify-content-center mt-4"
+          >
+            <img src="" class="image1 p-1" alt="Logo" />
+            <select
+              id="Currency"
+              class="bg-secondary rounded text-light w-100"
+            ></select>
+          </div>
+          <div
+            class="w-100 d-flex bg-secondary rounded justify-content-center mt-4"
+          >
+            <img src="" class="image2 p-1" alt="Logo" />
+            <select
+              id="convertedTo"
+              class="bg-secondary rounded text-light w-100"
+            ></select>
+          </div>
+        </div>
+        <button class="btn btn-secondary p-md-2 w-75" id="convert">
+          Convert
+        </button>
+        <div class="row justify-content-end w-100 gap-4 gap-md-5">
+          <span
+            class="w-100 fs-2 fw-bold text-center text-light"
+            id="print"
+          ></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
