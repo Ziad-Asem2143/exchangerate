@@ -20,11 +20,11 @@ Object.entries(COUNTRY_NAMES).map(([key, value]) => {
 
 swap.addEventListener("click", () => {
   let a = Currency.value;
-  console.log(a, Currency.value, convertedTo.value);
   Currency.value = convertedTo.value;
-  console.log(a, Currency.value, convertedTo.value);
   convertedTo.value = a;
-  console.log(a, Currency.value, convertedTo.value);
+  let i = image1.src;
+  image1.src = image2.src;
+  image2.src = i;
 });
 
 Currency.addEventListener("change", () => {
